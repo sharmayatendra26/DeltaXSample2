@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="1d1a0dacc1bc4931a043ad565a983bbc" Name="Diagram1">
+        <EntityTypeShape EntityType="DeltaXModel.Actor" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeltaXModel.Movie" Width="1.5" PointX="0.75" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeltaXModel.MovieActor" Width="1.5" PointX="3" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeltaXModel.MovieProducer" Width="1.5" PointX="6" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeltaXModel.Producer" Width="1.5" PointX="3.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="DeltaXModel.FK_MovieActor_2" ManuallyRouted="false" />
+        <AssociationConnector Association="DeltaXModel.FK_MovieActor_1" ManuallyRouted="false" />
+        <AssociationConnector Association="DeltaXModel.FK_MovieProducer_1" ManuallyRouted="false" />
+        <AssociationConnector Association="DeltaXModel.FK_MovieProducer_2" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

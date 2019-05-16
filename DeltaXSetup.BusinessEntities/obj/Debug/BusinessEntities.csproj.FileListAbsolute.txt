@@ -1,0 +1,8 @@
+c:\users\ysharma\documents\visual studio 2012\Projects\DeltaXSetup\BusinessEntities\bin\Debug\BusinessEntities.dll.config
+c:\users\ysharma\documents\visual studio 2012\Projects\DeltaXSetup\BusinessEntities\bin\Debug\BusinessEntities.dll
+c:\users\ysharma\documents\visual studio 2012\Projects\DeltaXSetup\BusinessEntities\bin\Debug\BusinessEntities.pdb
+c:\users\ysharma\documents\visual studio 2012\Projects\DeltaXSetup\BusinessEntities\bin\Debug\EntityFramework.dll
+c:\users\ysharma\documents\visual studio 2012\Projects\DeltaXSetup\BusinessEntities\bin\Debug\EntityFramework.xml
+c:\users\ysharma\documents\visual studio 2012\Projects\DeltaXSetup\BusinessEntities\obj\Debug\BusinessEntities.csprojResolveAssemblyReference.cache
+c:\users\ysharma\documents\visual studio 2012\Projects\DeltaXSetup\BusinessEntities\obj\Debug\BusinessEntities.dll
+c:\users\ysharma\documents\visual studio 2012\Projects\DeltaXSetup\BusinessEntities\obj\Debug\BusinessEntities.pdb

@@ -1,0 +1,51 @@
+﻿@model BusinessEntities.ProducerEntity
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>ProducerEntity</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ProducerId)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ProducerId)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Sex)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Sex)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.DOB)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DOB)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Bio)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Bio)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=item.ProducerId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

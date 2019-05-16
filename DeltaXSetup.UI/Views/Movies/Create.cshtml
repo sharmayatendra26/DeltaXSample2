@@ -1,0 +1,83 @@
+﻿@model DeltaXSetup.Models.Movie
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm("Create", "Movies", FormMethod.Post, new { enctype = "multipart/form-data" })) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Movie</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.MovieData.MovieId)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.MovieData.MovieId)
+            @Html.ValidationMessageFor(model => model.MovieData.MovieId)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.MovieData.Name)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.MovieData.Name)
+            @Html.ValidationMessageFor(model => model.MovieData.Name)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.MovieData.ReleaseYear)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.MovieData.ReleaseYear)
+            @Html.ValidationMessageFor(model => model.MovieData.ReleaseYear)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.MovieData.Plot)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.MovieData.Plot)
+            @Html.ValidationMessageFor(model => model.MovieData.Plot)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.MovieData.Poster)
+        </div>
+        <div class="editor-field">
+            <input type="file" name="postedFile"/>
+            @Html.ValidationMessageFor(model => model.MovieData.Poster)
+        </div>
+        <div class="editor-label">
+            @Html.Label("Actors")
+        </div>
+        <div class="editor-field">
+            @Html.ListBoxFor(m => m.MovieData.MovieActors, Model.ActorData)
+            @Html.ValidationMessage("Please select one or more Actor(s)")
+        </div>
+        <div class="editor-label">
+            @Html.Label("Producer")
+        </div>
+        <div class="editor-field">
+            @Html.DropDownListFor(m => m.MovieData.MovieProducers, Model.ProducerData)
+            @Html.ValidationMessage("Please select a Producer")
+        </div>
+        <br />
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

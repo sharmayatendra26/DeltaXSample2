@@ -1,0 +1,403 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="DeltaXModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="DeltaXModelStoreContainer">
+          <EntitySet Name="Actor" EntityType="DeltaXModel.Store.Actor" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Movie" EntityType="DeltaXModel.Store.Movie" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="MovieActor" EntityType="DeltaXModel.Store.MovieActor" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="MovieProducer" EntityType="DeltaXModel.Store.MovieProducer" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Producer" EntityType="DeltaXModel.Store.Producer" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_MovieActor_1" Association="DeltaXModel.Store.FK_MovieActor_1">
+            <End Role="Movie" EntitySet="Movie" />
+            <End Role="MovieActor" EntitySet="MovieActor" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MovieActor_2" Association="DeltaXModel.Store.FK_MovieActor_2">
+            <End Role="Actor" EntitySet="Actor" />
+            <End Role="MovieActor" EntitySet="MovieActor" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MovieProducer_1" Association="DeltaXModel.Store.FK_MovieProducer_1">
+            <End Role="Movie" EntitySet="Movie" />
+            <End Role="MovieProducer" EntitySet="MovieProducer" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MovieProducer_2" Association="DeltaXModel.Store.FK_MovieProducer_2">
+            <End Role="Producer" EntitySet="Producer" />
+            <End Role="MovieProducer" EntitySet="MovieProducer" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Actor">
+          <Key>
+            <PropertyRef Name="ActorId" />
+          </Key>
+          <Property Name="ActorId" Type="numeric" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="250" />
+          <Property Name="Sex" Type="nchar" Nullable="false" MaxLength="1" />
+          <Property Name="DOB" Type="date" Nullable="false" />
+          <Property Name="Bio" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="IsDeleted" Type="bit" Nullable="false" />
+          <Property Name="CreatedOn" Type="datetime2" Nullable="false" />
+          <Property Name="CreatedBy" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="ModifiedOn" Type="datetime2" Nullable="false" />
+          <Property Name="ModifiedBy" Type="nvarchar" Nullable="false" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="Movie">
+          <Key>
+            <PropertyRef Name="MovieId" />
+          </Key>
+          <Property Name="MovieId" Type="numeric" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="250" />
+          <Property Name="ReleaseYear" Type="numeric" Nullable="false" Precision="4" />
+          <Property Name="Plot" Type="nvarchar" Nullable="false" MaxLength="1000" />
+          <Property Name="Poster" Type="nvarchar" Nullable="false" MaxLength="500" />
+          <Property Name="IsDeleted" Type="bit" Nullable="false" />
+          <Property Name="CreatedOn" Type="datetime2" Nullable="false" />
+          <Property Name="CreatedBy" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="ModifiedOn" Type="datetime2" Nullable="false" />
+          <Property Name="ModifiedBy" Type="nvarchar" Nullable="false" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="MovieActor">
+          <Key>
+            <PropertyRef Name="MovieActorId" />
+          </Key>
+          <Property Name="MovieActorId" Type="numeric" Nullable="false" />
+          <Property Name="MovieId" Type="numeric" Nullable="false" />
+          <Property Name="ActorId" Type="numeric" Nullable="false" />
+          <Property Name="CreatedOn" Type="datetime2" Nullable="false" />
+          <Property Name="CreatedBy" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="ModifiedOn" Type="datetime2" Nullable="false" />
+          <Property Name="ModifiedBy" Type="nvarchar" Nullable="false" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="MovieProducer">
+          <Key>
+            <PropertyRef Name="MovieProducerId" />
+          </Key>
+          <Property Name="MovieProducerId" Type="numeric" Nullable="false" />
+          <Property Name="MovieId" Type="numeric" Nullable="false" />
+          <Property Name="ProducerId" Type="numeric" Nullable="false" />
+          <Property Name="CreatedOn" Type="datetime2" Nullable="false" />
+          <Property Name="CreatedBy" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="ModifiedOn" Type="datetime2" Nullable="false" />
+          <Property Name="ModifiedBy" Type="nvarchar" Nullable="false" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="Producer">
+          <Key>
+            <PropertyRef Name="ProducerId" />
+          </Key>
+          <Property Name="ProducerId" Type="numeric" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="250" />
+          <Property Name="Sex" Type="nchar" Nullable="false" MaxLength="1" />
+          <Property Name="DOB" Type="date" Nullable="false" />
+          <Property Name="Bio" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="IsDeleted" Type="bit" Nullable="false" />
+          <Property Name="CreatedOn" Type="datetime2" Nullable="false" />
+          <Property Name="CreatedBy" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="ModifiedOn" Type="datetime2" Nullable="false" />
+          <Property Name="ModifiedBy" Type="nvarchar" Nullable="false" MaxLength="100" />
+        </EntityType>
+        <Association Name="FK_MovieActor_1">
+          <End Role="Movie" Type="DeltaXModel.Store.Movie" Multiplicity="1" />
+          <End Role="MovieActor" Type="DeltaXModel.Store.MovieActor" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Movie">
+              <PropertyRef Name="MovieId" />
+            </Principal>
+            <Dependent Role="MovieActor">
+              <PropertyRef Name="MovieId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MovieActor_2">
+          <End Role="Actor" Type="DeltaXModel.Store.Actor" Multiplicity="1" />
+          <End Role="MovieActor" Type="DeltaXModel.Store.MovieActor" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Actor">
+              <PropertyRef Name="ActorId" />
+            </Principal>
+            <Dependent Role="MovieActor">
+              <PropertyRef Name="ActorId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MovieProducer_1">
+          <End Role="Movie" Type="DeltaXModel.Store.Movie" Multiplicity="1" />
+          <End Role="MovieProducer" Type="DeltaXModel.Store.MovieProducer" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Movie">
+              <PropertyRef Name="MovieId" />
+            </Principal>
+            <Dependent Role="MovieProducer">
+              <PropertyRef Name="MovieId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MovieProducer_2">
+          <End Role="Producer" Type="DeltaXModel.Store.Producer" Multiplicity="1" />
+          <End Role="MovieProducer" Type="DeltaXModel.Store.MovieProducer" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Producer">
+              <PropertyRef Name="ProducerId" />
+            </Principal>
+            <Dependent Role="MovieProducer">
+              <PropertyRef Name="ProducerId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="DeltaXModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="DeltaXEntities" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="Actors" EntityType="DeltaXModel.Actor" />
+          <EntitySet Name="Movies" EntityType="DeltaXModel.Movie" />
+          <EntitySet Name="MovieActors" EntityType="DeltaXModel.MovieActor" />
+          <EntitySet Name="MovieProducers" EntityType="DeltaXModel.MovieProducer" />
+          <EntitySet Name="Producers" EntityType="DeltaXModel.Producer" />
+          <AssociationSet Name="FK_MovieActor_2" Association="DeltaXModel.FK_MovieActor_2">
+            <End Role="Actor" EntitySet="Actors" />
+            <End Role="MovieActor" EntitySet="MovieActors" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MovieActor_1" Association="DeltaXModel.FK_MovieActor_1">
+            <End Role="Movie" EntitySet="Movies" />
+            <End Role="MovieActor" EntitySet="MovieActors" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MovieProducer_1" Association="DeltaXModel.FK_MovieProducer_1">
+            <End Role="Movie" EntitySet="Movies" />
+            <End Role="MovieProducer" EntitySet="MovieProducers" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MovieProducer_2" Association="DeltaXModel.FK_MovieProducer_2">
+            <End Role="Producer" EntitySet="Producers" />
+            <End Role="MovieProducer" EntitySet="MovieProducers" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Actor">
+          <Key>
+            <PropertyRef Name="ActorId" />
+          </Key>
+          <Property Name="ActorId" Type="Decimal" Nullable="false" Precision="18" Scale="0" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="Sex" Type="String" Nullable="false" MaxLength="1" Unicode="true" FixedLength="true" />
+          <Property Name="DOB" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="Bio" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+          <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="7" />
+          <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="ModifiedOn" Type="DateTime" Nullable="false" Precision="7" />
+          <Property Name="ModifiedBy" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="MovieActors" Relationship="DeltaXModel.FK_MovieActor_2" FromRole="Actor" ToRole="MovieActor" />
+        </EntityType>
+        <EntityType Name="Movie">
+          <Key>
+            <PropertyRef Name="MovieId" />
+          </Key>
+          <Property Name="MovieId" Type="Decimal" Nullable="false" Precision="18" Scale="0" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="ReleaseYear" Type="Decimal" Nullable="false" Precision="4" Scale="0" />
+          <Property Name="Plot" Type="String" Nullable="false" MaxLength="1000" Unicode="true" FixedLength="false" />
+          <Property Name="Poster" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+          <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="7" />
+          <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="ModifiedOn" Type="DateTime" Nullable="false" Precision="7" />
+          <Property Name="ModifiedBy" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="MovieActors" Relationship="DeltaXModel.FK_MovieActor_1" FromRole="Movie" ToRole="MovieActor" />
+          <NavigationProperty Name="MovieProducers" Relationship="DeltaXModel.FK_MovieProducer_1" FromRole="Movie" ToRole="MovieProducer" />
+        </EntityType>
+        <EntityType Name="MovieActor">
+          <Key>
+            <PropertyRef Name="MovieActorId" />
+          </Key>
+          <Property Name="MovieActorId" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+          <Property Name="MovieId" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+          <Property Name="ActorId" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+          <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="7" />
+          <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="ModifiedOn" Type="DateTime" Nullable="false" Precision="7" />
+          <Property Name="ModifiedBy" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="Actor" Relationship="DeltaXModel.FK_MovieActor_2" FromRole="MovieActor" ToRole="Actor" />
+          <NavigationProperty Name="Movie" Relationship="DeltaXModel.FK_MovieActor_1" FromRole="MovieActor" ToRole="Movie" />
+        </EntityType>
+        <EntityType Name="MovieProducer">
+          <Key>
+            <PropertyRef Name="MovieProducerId" />
+          </Key>
+          <Property Name="MovieProducerId" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+          <Property Name="MovieId" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+          <Property Name="ProducerId" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+          <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="7" />
+          <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="ModifiedOn" Type="DateTime" Nullable="false" Precision="7" />
+          <Property Name="ModifiedBy" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="Movie" Relationship="DeltaXModel.FK_MovieProducer_1" FromRole="MovieProducer" ToRole="Movie" />
+          <NavigationProperty Name="Producer" Relationship="DeltaXModel.FK_MovieProducer_2" FromRole="MovieProducer" ToRole="Producer" />
+        </EntityType>
+        <EntityType Name="Producer">
+          <Key>
+            <PropertyRef Name="ProducerId" />
+          </Key>
+          <Property Name="ProducerId" Type="Decimal" Nullable="false" Precision="18" Scale="0" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="Sex" Type="String" Nullable="false" MaxLength="1" Unicode="true" FixedLength="true" />
+          <Property Name="DOB" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="Bio" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+          <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="7" />
+          <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="ModifiedOn" Type="DateTime" Nullable="false" Precision="7" />
+          <Property Name="ModifiedBy" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="MovieProducers" Relationship="DeltaXModel.FK_MovieProducer_2" FromRole="Producer" ToRole="MovieProducer" />
+        </EntityType>
+        <Association Name="FK_MovieActor_2">
+          <End Role="Actor" Type="DeltaXModel.Actor" Multiplicity="1" />
+          <End Role="MovieActor" Type="DeltaXModel.MovieActor" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Actor">
+              <PropertyRef Name="ActorId" />
+            </Principal>
+            <Dependent Role="MovieActor">
+              <PropertyRef Name="ActorId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MovieActor_1">
+          <End Role="Movie" Type="DeltaXModel.Movie" Multiplicity="1" />
+          <End Role="MovieActor" Type="DeltaXModel.MovieActor" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Movie">
+              <PropertyRef Name="MovieId" />
+            </Principal>
+            <Dependent Role="MovieActor">
+              <PropertyRef Name="MovieId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MovieProducer_1">
+          <End Role="Movie" Type="DeltaXModel.Movie" Multiplicity="1" />
+          <End Role="MovieProducer" Type="DeltaXModel.MovieProducer" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Movie">
+              <PropertyRef Name="MovieId" />
+            </Principal>
+            <Dependent Role="MovieProducer">
+              <PropertyRef Name="MovieId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MovieProducer_2">
+          <End Role="Producer" Type="DeltaXModel.Producer" Multiplicity="1" />
+          <End Role="MovieProducer" Type="DeltaXModel.MovieProducer" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Producer">
+              <PropertyRef Name="ProducerId" />
+            </Principal>
+            <Dependent Role="MovieProducer">
+              <PropertyRef Name="ProducerId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="DeltaXModelStoreContainer" CdmEntityContainer="DeltaXEntities">
+          <EntitySetMapping Name="Actors">
+            <EntityTypeMapping TypeName="DeltaXModel.Actor">
+              <MappingFragment StoreEntitySet="Actor">
+                <ScalarProperty Name="ActorId" ColumnName="ActorId" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Sex" ColumnName="Sex" />
+                <ScalarProperty Name="DOB" ColumnName="DOB" />
+                <ScalarProperty Name="Bio" ColumnName="Bio" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Movies">
+            <EntityTypeMapping TypeName="DeltaXModel.Movie">
+              <MappingFragment StoreEntitySet="Movie">
+                <ScalarProperty Name="MovieId" ColumnName="MovieId" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ReleaseYear" ColumnName="ReleaseYear" />
+                <ScalarProperty Name="Plot" ColumnName="Plot" />
+                <ScalarProperty Name="Poster" ColumnName="Poster" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MovieActors">
+            <EntityTypeMapping TypeName="DeltaXModel.MovieActor">
+              <MappingFragment StoreEntitySet="MovieActor">
+                <ScalarProperty Name="MovieActorId" ColumnName="MovieActorId" />
+                <ScalarProperty Name="MovieId" ColumnName="MovieId" />
+                <ScalarProperty Name="ActorId" ColumnName="ActorId" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MovieProducers">
+            <EntityTypeMapping TypeName="DeltaXModel.MovieProducer">
+              <MappingFragment StoreEntitySet="MovieProducer">
+                <ScalarProperty Name="MovieProducerId" ColumnName="MovieProducerId" />
+                <ScalarProperty Name="MovieId" ColumnName="MovieId" />
+                <ScalarProperty Name="ProducerId" ColumnName="ProducerId" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Producers">
+            <EntityTypeMapping TypeName="DeltaXModel.Producer">
+              <MappingFragment StoreEntitySet="Producer">
+                <ScalarProperty Name="ProducerId" ColumnName="ProducerId" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Sex" ColumnName="Sex" />
+                <ScalarProperty Name="DOB" ColumnName="DOB" />
+                <ScalarProperty Name="Bio" ColumnName="Bio" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

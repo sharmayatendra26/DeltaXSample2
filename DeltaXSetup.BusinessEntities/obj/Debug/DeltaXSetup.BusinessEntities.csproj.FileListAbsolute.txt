@@ -1,0 +1,16 @@
+F:\DeltaXSetup (3)\DeltaXSetup\DeltaXSetup.BusinessEntities\bin\Debug\BusinessEntities.dll.config
+F:\DeltaXSetup (3)\DeltaXSetup\DeltaXSetup.BusinessEntities\bin\Debug\BusinessEntities.dll
+F:\DeltaXSetup (3)\DeltaXSetup\DeltaXSetup.BusinessEntities\bin\Debug\BusinessEntities.pdb
+F:\DeltaXSetup (3)\DeltaXSetup\DeltaXSetup.BusinessEntities\bin\Debug\EntityFramework.dll
+F:\DeltaXSetup (3)\DeltaXSetup\DeltaXSetup.BusinessEntities\bin\Debug\EntityFramework.xml
+F:\DeltaXSetup (3)\DeltaXSetup\DeltaXSetup.BusinessEntities\obj\Debug\DeltaXSetup.BusinessEntities.csprojResolveAssemblyReference.cache
+F:\DeltaXSetup (3)\DeltaXSetup\DeltaXSetup.BusinessEntities\obj\Debug\BusinessEntities.dll
+F:\DeltaXSetup (3)\DeltaXSetup\DeltaXSetup.BusinessEntities\obj\Debug\BusinessEntities.pdb
+D:\Yatendra\DeltaXSetup (3)\DeltaXSetup2\DeltaXSetup\DeltaXSetup.BusinessEntities\bin\Debug\BusinessEntities.dll.config
+D:\Yatendra\DeltaXSetup (3)\DeltaXSetup2\DeltaXSetup\DeltaXSetup.BusinessEntities\bin\Debug\BusinessEntities.dll
+D:\Yatendra\DeltaXSetup (3)\DeltaXSetup2\DeltaXSetup\DeltaXSetup.BusinessEntities\bin\Debug\BusinessEntities.pdb
+D:\Yatendra\DeltaXSetup (3)\DeltaXSetup2\DeltaXSetup\DeltaXSetup.BusinessEntities\bin\Debug\EntityFramework.dll
+D:\Yatendra\DeltaXSetup (3)\DeltaXSetup2\DeltaXSetup\DeltaXSetup.BusinessEntities\bin\Debug\EntityFramework.xml
+D:\Yatendra\DeltaXSetup (3)\DeltaXSetup2\DeltaXSetup\DeltaXSetup.BusinessEntities\obj\Debug\DeltaXSetup.BusinessEntities.csprojResolveAssemblyReference.cache
+D:\Yatendra\DeltaXSetup (3)\DeltaXSetup2\DeltaXSetup\DeltaXSetup.BusinessEntities\obj\Debug\BusinessEntities.dll
+D:\Yatendra\DeltaXSetup (3)\DeltaXSetup2\DeltaXSetup\DeltaXSetup.BusinessEntities\obj\Debug\BusinessEntities.pdb

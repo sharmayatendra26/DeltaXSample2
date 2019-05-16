@@ -1,0 +1,49 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    
+    @Html.Partial("_Header")
+    @RenderSection("metatags",false)
+
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <!-- Top Menu Start -->
+    @Html.Partial("_TopMenu")
+    <!-- End of Top Menu-->
+
+    <!-- Banner Start -->
+    @Html.Partial("_Poster")
+    <!-- End of Banner -->
+
+    <div id="templatemo_content_wrapper">
+        <div id="templatemo_content">
+
+            <!-- Content Area -->
+            <div id="column_w530">
+                <div class="header_02">Welcome to DeltaX Technologies!</div>
+
+                @RenderBody()
+
+                <div class="cleaner"></div>
+            </div>
+            <!-- End of Content Area -->
+            
+            <div class="cleaner"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    @Html.Partial("_Footer")
+    <!-- End of Footer -->
+
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

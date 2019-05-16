@@ -1,0 +1,107 @@
+C:\Users\ysharma\Documents\Visual Studio 2012\Projects\DeltaXSetup\DependencyResolver\bin\Debug\DependencyResolver.dll
+C:\Users\ysharma\Documents\Visual Studio 2012\Projects\DeltaXSetup\DependencyResolver\bin\Debug\DependencyResolver.pdb
+C:\Users\ysharma\Documents\Visual Studio 2012\Projects\DeltaXSetup\DependencyResolver\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\ysharma\Documents\Visual Studio 2012\Projects\DeltaXSetup\DependencyResolver\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\ysharma\Documents\Visual Studio 2012\Projects\DeltaXSetup\DependencyResolver\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\ysharma\Documents\Visual Studio 2012\Projects\DeltaXSetup\DependencyResolver\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.dll
+C:\Users\ysharma\Documents\Visual Studio 2012\Projects\DeltaXSetup\DependencyResolver\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\ysharma\Documents\Visual Studio 2012\Projects\DeltaXSetup\DependencyResolver\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ysharma\Documents\Visual Studio 2012\Projects\DeltaXSetup\DependencyResolver\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\ysharma\Documents\Visual Studio 2012\Projects\DeltaXSetup\DependencyResolver\bin\Debug\System.Web.Helpers.dll
+C:\Users\ysharma\Documents\Visual Studio 2012\Projects\DeltaXSetup\DependencyResolver\bin\Debug\System.Web.Http.dll
+C:\Users\ysharma\Documents\Visual Studio 2012\Projects\DeltaXSetup\DependencyResolver\bin\Debug\System.Web.Http.WebHost.dll
+C:\Users\ysharma\Documents\Visual Studio 2012\Projects\DeltaXSetup\DependencyResolver\bin\Debug\System.Web.Mvc.dll
+C:\Users\ysharma\Documents\Visual Studio 2012\Projects\DeltaXSetup\DependencyResolver\bin\Debug\System.Web.Razor.dll
+C:\Users\ysharma\Documents\Visual Studio 2012\Projects\DeltaXSetup\DependencyResolver\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\ysharma\Documents\Visual Studio 2012\Projects\DeltaXSetup\DependencyResolver\bin\Debug\System.Web.WebPages.dll
+C:\Users\ysharma\Documents\Visual Studio 2012\Projects\DeltaXSetup\DependencyResolver\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\ysharma\Documents\Visual Studio 2012\Projects\DeltaXSetup\DependencyResolver\bin\Debug\Unity.Mvc4.dll
+C:\Users\ysharma\Documents\Visual Studio 2012\Projects\DeltaXSetup\DependencyResolver\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\ysharma\Documents\Visual Studio 2012\Projects\DeltaXSetup\DependencyResolver\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Users\ysharma\Documents\Visual Studio 2012\Projects\DeltaXSetup\DependencyResolver\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Users\ysharma\Documents\Visual Studio 2012\Projects\DeltaXSetup\DependencyResolver\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+C:\Users\ysharma\Documents\Visual Studio 2012\Projects\DeltaXSetup\DependencyResolver\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.xml
+C:\Users\ysharma\Documents\Visual Studio 2012\Projects\DeltaXSetup\DependencyResolver\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ysharma\Documents\Visual Studio 2012\Projects\DeltaXSetup\DependencyResolver\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\ysharma\Documents\Visual Studio 2012\Projects\DeltaXSetup\DependencyResolver\bin\Debug\System.Web.Helpers.xml
+C:\Users\ysharma\Documents\Visual Studio 2012\Projects\DeltaXSetup\DependencyResolver\bin\Debug\System.Web.Http.xml
+C:\Users\ysharma\Documents\Visual Studio 2012\Projects\DeltaXSetup\DependencyResolver\bin\Debug\System.Web.Http.WebHost.xml
+C:\Users\ysharma\Documents\Visual Studio 2012\Projects\DeltaXSetup\DependencyResolver\bin\Debug\System.Web.Mvc.xml
+C:\Users\ysharma\Documents\Visual Studio 2012\Projects\DeltaXSetup\DependencyResolver\bin\Debug\System.Web.Razor.xml
+C:\Users\ysharma\Documents\Visual Studio 2012\Projects\DeltaXSetup\DependencyResolver\bin\Debug\System.Web.WebPages.xml
+C:\Users\ysharma\Documents\Visual Studio 2012\Projects\DeltaXSetup\DependencyResolver\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\ysharma\Documents\Visual Studio 2012\Projects\DeltaXSetup\DependencyResolver\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\ysharma\Documents\Visual Studio 2012\Projects\DeltaXSetup\DependencyResolver\obj\Debug\DeltaXSetup.DependencyResolver.csprojResolveAssemblyReference.cache
+C:\Users\ysharma\Documents\Visual Studio 2012\Projects\DeltaXSetup\DependencyResolver\obj\Debug\DependencyResolver.dll
+C:\Users\ysharma\Documents\Visual Studio 2012\Projects\DeltaXSetup\DependencyResolver\obj\Debug\DependencyResolver.pdb
+F:\DeltaXSetup (3)\DeltaXSetup\DeltaXSetup.DependencyResolver\bin\Debug\DependencyResolver.dll
+F:\DeltaXSetup (3)\DeltaXSetup\DeltaXSetup.DependencyResolver\bin\Debug\DependencyResolver.pdb
+F:\DeltaXSetup (3)\DeltaXSetup\DeltaXSetup.DependencyResolver\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+F:\DeltaXSetup (3)\DeltaXSetup\DeltaXSetup.DependencyResolver\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+F:\DeltaXSetup (3)\DeltaXSetup\DeltaXSetup.DependencyResolver\bin\Debug\Microsoft.Practices.Unity.dll
+F:\DeltaXSetup (3)\DeltaXSetup\DeltaXSetup.DependencyResolver\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.dll
+F:\DeltaXSetup (3)\DeltaXSetup\DeltaXSetup.DependencyResolver\bin\Debug\Microsoft.Web.Infrastructure.dll
+F:\DeltaXSetup (3)\DeltaXSetup\DeltaXSetup.DependencyResolver\bin\Debug\Newtonsoft.Json.dll
+F:\DeltaXSetup (3)\DeltaXSetup\DeltaXSetup.DependencyResolver\bin\Debug\System.Net.Http.Formatting.dll
+F:\DeltaXSetup (3)\DeltaXSetup\DeltaXSetup.DependencyResolver\bin\Debug\System.Web.Helpers.dll
+F:\DeltaXSetup (3)\DeltaXSetup\DeltaXSetup.DependencyResolver\bin\Debug\System.Web.Http.dll
+F:\DeltaXSetup (3)\DeltaXSetup\DeltaXSetup.DependencyResolver\bin\Debug\System.Web.Http.WebHost.dll
+F:\DeltaXSetup (3)\DeltaXSetup\DeltaXSetup.DependencyResolver\bin\Debug\System.Web.Mvc.dll
+F:\DeltaXSetup (3)\DeltaXSetup\DeltaXSetup.DependencyResolver\bin\Debug\System.Web.Razor.dll
+F:\DeltaXSetup (3)\DeltaXSetup\DeltaXSetup.DependencyResolver\bin\Debug\System.Web.WebPages.Deployment.dll
+F:\DeltaXSetup (3)\DeltaXSetup\DeltaXSetup.DependencyResolver\bin\Debug\System.Web.WebPages.dll
+F:\DeltaXSetup (3)\DeltaXSetup\DeltaXSetup.DependencyResolver\bin\Debug\System.Web.WebPages.Razor.dll
+F:\DeltaXSetup (3)\DeltaXSetup\DeltaXSetup.DependencyResolver\bin\Debug\Unity.Mvc4.dll
+F:\DeltaXSetup (3)\DeltaXSetup\DeltaXSetup.DependencyResolver\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+F:\DeltaXSetup (3)\DeltaXSetup\DeltaXSetup.DependencyResolver\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+F:\DeltaXSetup (3)\DeltaXSetup\DeltaXSetup.DependencyResolver\bin\Debug\Microsoft.Practices.Unity.xml
+F:\DeltaXSetup (3)\DeltaXSetup\DeltaXSetup.DependencyResolver\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+F:\DeltaXSetup (3)\DeltaXSetup\DeltaXSetup.DependencyResolver\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.xml
+F:\DeltaXSetup (3)\DeltaXSetup\DeltaXSetup.DependencyResolver\bin\Debug\Newtonsoft.Json.xml
+F:\DeltaXSetup (3)\DeltaXSetup\DeltaXSetup.DependencyResolver\bin\Debug\System.Net.Http.Formatting.xml
+F:\DeltaXSetup (3)\DeltaXSetup\DeltaXSetup.DependencyResolver\bin\Debug\System.Web.Helpers.xml
+F:\DeltaXSetup (3)\DeltaXSetup\DeltaXSetup.DependencyResolver\bin\Debug\System.Web.Http.xml
+F:\DeltaXSetup (3)\DeltaXSetup\DeltaXSetup.DependencyResolver\bin\Debug\System.Web.Http.WebHost.xml
+F:\DeltaXSetup (3)\DeltaXSetup\DeltaXSetup.DependencyResolver\bin\Debug\System.Web.Mvc.xml
+F:\DeltaXSetup (3)\DeltaXSetup\DeltaXSetup.DependencyResolver\bin\Debug\System.Web.Razor.xml
+F:\DeltaXSetup (3)\DeltaXSetup\DeltaXSetup.DependencyResolver\bin\Debug\System.Web.WebPages.xml
+F:\DeltaXSetup (3)\DeltaXSetup\DeltaXSetup.DependencyResolver\bin\Debug\System.Web.WebPages.Deployment.xml
+F:\DeltaXSetup (3)\DeltaXSetup\DeltaXSetup.DependencyResolver\bin\Debug\System.Web.WebPages.Razor.xml
+F:\DeltaXSetup (3)\DeltaXSetup\DeltaXSetup.DependencyResolver\obj\Debug\DependencyResolver.dll
+F:\DeltaXSetup (3)\DeltaXSetup\DeltaXSetup.DependencyResolver\obj\Debug\DependencyResolver.pdb
+D:\Yatendra\DeltaXSetup (3)\DeltaXSetup2\DeltaXSetup\DeltaXSetup.DependencyResolver\bin\Debug\DependencyResolver.dll
+D:\Yatendra\DeltaXSetup (3)\DeltaXSetup2\DeltaXSetup\DeltaXSetup.DependencyResolver\bin\Debug\DependencyResolver.pdb
+D:\Yatendra\DeltaXSetup (3)\DeltaXSetup2\DeltaXSetup\DeltaXSetup.DependencyResolver\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\Yatendra\DeltaXSetup (3)\DeltaXSetup2\DeltaXSetup\DeltaXSetup.DependencyResolver\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+D:\Yatendra\DeltaXSetup (3)\DeltaXSetup2\DeltaXSetup\DeltaXSetup.DependencyResolver\bin\Debug\Microsoft.Practices.Unity.dll
+D:\Yatendra\DeltaXSetup (3)\DeltaXSetup2\DeltaXSetup\DeltaXSetup.DependencyResolver\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.dll
+D:\Yatendra\DeltaXSetup (3)\DeltaXSetup2\DeltaXSetup\DeltaXSetup.DependencyResolver\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\Yatendra\DeltaXSetup (3)\DeltaXSetup2\DeltaXSetup\DeltaXSetup.DependencyResolver\bin\Debug\Newtonsoft.Json.dll
+D:\Yatendra\DeltaXSetup (3)\DeltaXSetup2\DeltaXSetup\DeltaXSetup.DependencyResolver\bin\Debug\System.Net.Http.Formatting.dll
+D:\Yatendra\DeltaXSetup (3)\DeltaXSetup2\DeltaXSetup\DeltaXSetup.DependencyResolver\bin\Debug\System.Web.Helpers.dll
+D:\Yatendra\DeltaXSetup (3)\DeltaXSetup2\DeltaXSetup\DeltaXSetup.DependencyResolver\bin\Debug\System.Web.Http.dll
+D:\Yatendra\DeltaXSetup (3)\DeltaXSetup2\DeltaXSetup\DeltaXSetup.DependencyResolver\bin\Debug\System.Web.Http.WebHost.dll
+D:\Yatendra\DeltaXSetup (3)\DeltaXSetup2\DeltaXSetup\DeltaXSetup.DependencyResolver\bin\Debug\System.Web.Mvc.dll
+D:\Yatendra\DeltaXSetup (3)\DeltaXSetup2\DeltaXSetup\DeltaXSetup.DependencyResolver\bin\Debug\System.Web.Razor.dll
+D:\Yatendra\DeltaXSetup (3)\DeltaXSetup2\DeltaXSetup\DeltaXSetup.DependencyResolver\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Yatendra\DeltaXSetup (3)\DeltaXSetup2\DeltaXSetup\DeltaXSetup.DependencyResolver\bin\Debug\System.Web.WebPages.dll
+D:\Yatendra\DeltaXSetup (3)\DeltaXSetup2\DeltaXSetup\DeltaXSetup.DependencyResolver\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Yatendra\DeltaXSetup (3)\DeltaXSetup2\DeltaXSetup\DeltaXSetup.DependencyResolver\bin\Debug\Unity.Mvc4.dll
+D:\Yatendra\DeltaXSetup (3)\DeltaXSetup2\DeltaXSetup\DeltaXSetup.DependencyResolver\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+D:\Yatendra\DeltaXSetup (3)\DeltaXSetup2\DeltaXSetup\DeltaXSetup.DependencyResolver\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\Yatendra\DeltaXSetup (3)\DeltaXSetup2\DeltaXSetup\DeltaXSetup.DependencyResolver\bin\Debug\Microsoft.Practices.Unity.xml
+D:\Yatendra\DeltaXSetup (3)\DeltaXSetup2\DeltaXSetup\DeltaXSetup.DependencyResolver\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+D:\Yatendra\DeltaXSetup (3)\DeltaXSetup2\DeltaXSetup\DeltaXSetup.DependencyResolver\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.xml
+D:\Yatendra\DeltaXSetup (3)\DeltaXSetup2\DeltaXSetup\DeltaXSetup.DependencyResolver\bin\Debug\Newtonsoft.Json.xml
+D:\Yatendra\DeltaXSetup (3)\DeltaXSetup2\DeltaXSetup\DeltaXSetup.DependencyResolver\bin\Debug\System.Net.Http.Formatting.xml
+D:\Yatendra\DeltaXSetup (3)\DeltaXSetup2\DeltaXSetup\DeltaXSetup.DependencyResolver\bin\Debug\System.Web.Helpers.xml
+D:\Yatendra\DeltaXSetup (3)\DeltaXSetup2\DeltaXSetup\DeltaXSetup.DependencyResolver\bin\Debug\System.Web.Http.xml
+D:\Yatendra\DeltaXSetup (3)\DeltaXSetup2\DeltaXSetup\DeltaXSetup.DependencyResolver\bin\Debug\System.Web.Http.WebHost.xml
+D:\Yatendra\DeltaXSetup (3)\DeltaXSetup2\DeltaXSetup\DeltaXSetup.DependencyResolver\bin\Debug\System.Web.Mvc.xml
+D:\Yatendra\DeltaXSetup (3)\DeltaXSetup2\DeltaXSetup\DeltaXSetup.DependencyResolver\bin\Debug\System.Web.Razor.xml
+D:\Yatendra\DeltaXSetup (3)\DeltaXSetup2\DeltaXSetup\DeltaXSetup.DependencyResolver\bin\Debug\System.Web.WebPages.xml
+D:\Yatendra\DeltaXSetup (3)\DeltaXSetup2\DeltaXSetup\DeltaXSetup.DependencyResolver\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Yatendra\DeltaXSetup (3)\DeltaXSetup2\DeltaXSetup\DeltaXSetup.DependencyResolver\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Yatendra\DeltaXSetup (3)\DeltaXSetup2\DeltaXSetup\DeltaXSetup.DependencyResolver\obj\Debug\DeltaXSetup.DependencyResolver.csprojResolveAssemblyReference.cache
+D:\Yatendra\DeltaXSetup (3)\DeltaXSetup2\DeltaXSetup\DeltaXSetup.DependencyResolver\obj\Debug\DependencyResolver.dll
+D:\Yatendra\DeltaXSetup (3)\DeltaXSetup2\DeltaXSetup\DeltaXSetup.DependencyResolver\obj\Debug\DependencyResolver.pdb
