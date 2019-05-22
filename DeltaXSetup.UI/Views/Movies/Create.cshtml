@@ -9,7 +9,7 @@
 
 @using (Html.BeginForm("Create", "Movies", FormMethod.Post, new { enctype = "multipart/form-data" })) {
     @Html.AntiForgeryToken()
-    @Html.ValidationSummary(true)
+    @Html.ValidationSummary()
 
     <fieldset>
         <legend>Movie</legend>
@@ -75,7 +75,7 @@
 }
 
 <div>
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Back to List", "Index")  |  @Html.ActionLink("Add Actor", "Create","Actor")  |  @Html.ActionLink("Add Producer", "Create","Producer")
 </div>
 
 @section Scripts {

@@ -17,6 +17,7 @@ namespace DeltaXSetup.Controllers
         private readonly IDeltaXBaseController _ControllerBase;
         private readonly IActorServices _ActorServices;
         private readonly IProducerServices _ProducerServices;
+        private Movie model;
 
         #region Public Constructor
         /// <summary>  
@@ -28,6 +29,7 @@ namespace DeltaXSetup.Controllers
             _ControllerBase = new DeltaXBaseController();
             _ActorServices = actorServices;
             _ProducerServices = producerServices;
+            GetDependentData();
         }
         //
         // GET: /Movies/
@@ -79,15 +81,19 @@ namespace DeltaXSetup.Controllers
             return new SelectList(producers, "Value", "Text");
         }
 
-        //
-        // GET: /Movies/Create
-        public ActionResult Create()
+        private void GetDependentData()
         {
-            var model = new Movie
+             model = new Movie
             {
                 ActorData = GetActors(),
                 ProducerData = GetProducers()
             };
+        }
+
+        //
+        // GET: /Movies/Create
+        public ActionResult Create()
+        {            
             return View(model);
         }
 
@@ -109,10 +115,19 @@ namespace DeltaXSetup.Controllers
                         movieActors.Add(new MovieActorEntity { ActorId = Convert.ToInt32(item), MovieId = collection.MovieData.MovieId });
                     }
                 }
+                else
+                {
+                    ModelState.AddModelError("Actors", "Atleast One Actor is required.!");
+                    return View();
+                }
                 if (Request.Form["MovieData.MovieProducers"].Length > 0)
                 {
                     var selectedProducer = Request.Form["MovieData.MovieProducers"];
                     producer.Add(new MovieProducerEntity { ProducerId = Convert.ToInt32(selectedProducer), MovieId = collection.MovieData.MovieId });
+                }
+                else {
+                    ModelState.AddModelError("Producer", "Producer is required.!");
+                    return View(model);
                 }
                 MovieEntity movie = new MovieEntity
                 {
@@ -131,7 +146,7 @@ namespace DeltaXSetup.Controllers
             }
             catch(Exception ex)
             {
-                return View();
+                return View(model);
             }
         }
 

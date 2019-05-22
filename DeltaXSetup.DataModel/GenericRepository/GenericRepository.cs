@@ -91,7 +91,7 @@ namespace DataModel.GenericRepository
             return DbSet.ToList();
         }
 
-        public virtual IEnumerable<TEntity> GetAllWithInclude(params string[] include)
+        public virtual IEnumerable<TEntity> GetWithInclude(params string[] include)
         {
             IQueryable<TEntity> query = this.DbSet;
             query = include.Aggregate(query, (current, inc) => current.Include(inc));

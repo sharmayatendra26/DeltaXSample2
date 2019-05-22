@@ -110,13 +110,21 @@ namespace BusinessServices.Actor
 
         public List<ActorEntity> GetActorList()
         {
-            var actors = _unitOfWork.ActorRepository.GetAll().ToList();
-            if (actors.Any())
+            try
             {
-                Mapper.CreateMap<DM.Actor, ActorEntity>();
-                var actorsModel = Mapper.Map<List<DM.Actor>, List<ActorEntity>>(actors);
-                return actorsModel;
+                var actors = _unitOfWork.ActorRepository.GetAll().ToList();
+                if (actors.Any())
+                {
+                    Mapper.CreateMap<DM.Actor, ActorEntity>();
+                    var actorsModel = Mapper.Map<List<DM.Actor>, List<ActorEntity>>(actors);
+                    return actorsModel;
+                }
             }
+            catch (Exception ex)
+            {                
+                throw;
+            }
+            
             return null;
         }
     }

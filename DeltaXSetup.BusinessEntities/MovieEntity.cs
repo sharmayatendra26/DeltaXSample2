@@ -8,13 +8,7 @@ using System.Web;
 namespace BusinessEntities
 {
     public class MovieEntity
-    {
-        public MovieEntity()
-        {
-            this.MovieActors = new HashSet<MovieActorEntity>();
-            this.MovieProducers = new HashSet<MovieProducerEntity>();
-        }
-
+    {      
         public decimal MovieId { get; set; }
         public string Name { get; set; }
         public decimal ReleaseYear { get; set; }
@@ -27,7 +21,9 @@ namespace BusinessEntities
         public System.DateTime ModifiedOn { get; set; }
         public string ModifiedBy { get; set; }
 
-        public virtual ICollection<MovieActorEntity> MovieActors { get; set; }
-        public virtual ICollection<MovieProducerEntity> MovieProducers { get; set; }
+        public ICollection<MovieActorEntity> MovieActors { get; set; }
+        public ICollection<MovieProducerEntity> MovieProducers { get; set; }
     }
+
+
 }

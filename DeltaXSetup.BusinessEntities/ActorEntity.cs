@@ -43,6 +43,6 @@ namespace BusinessEntities
         [HiddenInput(DisplayValue = true)]
         public string ModifiedBy { get; set; }
 
-        public virtual ICollection<MovieActorEntity> MovieActors { get; set; }
+        //public virtual ICollection<MovieActorEntity> MovieActors { get; set; }
     }
 }

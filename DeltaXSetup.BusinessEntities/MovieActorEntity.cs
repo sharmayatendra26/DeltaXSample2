@@ -14,9 +14,6 @@ namespace BusinessEntities
         public System.DateTime CreatedOn { get; set; }
         public string CreatedBy { get; set; }
         public System.DateTime ModifiedOn { get; set; }
-        public string ModifiedBy { get; set; }
-
-        public virtual ActorEntity Actor { get; set; }
-        public virtual MovieEntity Movie { get; set; }
+        public string ModifiedBy { get; set; }        
     }
 }

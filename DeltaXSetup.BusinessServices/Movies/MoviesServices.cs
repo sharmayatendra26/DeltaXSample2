@@ -47,7 +47,6 @@ namespace BusinessServices.Movies
                     {
                         DM.MovieActor movieActor = new DM.MovieActor
                         {
-                            MovieActorId = Movie.MovieId,
                             ActorId = item.ActorId,
                             MovieId = item.MovieId,
                             CreatedBy = string.Empty,
@@ -61,7 +60,6 @@ namespace BusinessServices.Movies
                     {
                         DM.MovieProducer movieProducer = new DM.MovieProducer
                         {
-                            MovieProducerId = Movie.MovieId,
                             ProducerId = item.ProducerId,
                             MovieId = item.MovieId,
                             CreatedBy = string.Empty,
@@ -142,13 +140,21 @@ namespace BusinessServices.Movies
 
         public List<MovieEntity> GetMovieList()
         {
-            var Moviess = _unitOfWork.MovieRepository.GetAllWithInclude("x=>x.Actor","p=>p.Producer").ToList();
-            if (Moviess.Any())
+            try
             {
-                Mapper.CreateMap<DM.Movie, MovieEntity>();
-                var MoviessModel = Mapper.Map<List<DM.Movie>, List<MovieEntity>>(Moviess);
-                return MoviessModel;
+                var Movies = _unitOfWork.MovieRepository.GetWithInclude("MovieActors", "MovieProducers").ToList();
+                if (Movies.Any())
+                {
+                    Mapper.CreateMap<DM.Movie, MovieEntity>();
+                    var MoviesModel = Mapper.Map<List<DM.Movie>, List<MovieEntity>>(Movies);
+                    return MoviesModel;
+                }
             }
+            catch (Exception ex)
+            {                
+                throw;
+            }
+            
             return null;
         }
 
